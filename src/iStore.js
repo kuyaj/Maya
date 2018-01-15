@@ -21,7 +21,7 @@ class iStore {
 
     },
     {
-        name : "Twenty-three : Eleven",
+        name : "23:11",
         url : "https://a.wattpad.com/cover/20323617-352-k349920.jpg",
     },
     {

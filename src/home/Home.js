@@ -5,6 +5,7 @@ import '../index.css'
 
 
 
+
 @observer
 export default class Home extends Component {
 render(){
@@ -16,26 +17,31 @@ render(){
        <div>
         <Container >
         <br/>   
-        <Card.Group itemsPerRow={4}>
+        <Card.Group doubling itemsPerRow={5}>   
          {
            this.props.store.story.map((x, y) => {
-            return(                                 
-                  <Card 
+            return(   
+        
+                             
+                  <Card  
                       key={y}
-                      image={ x.url } 
-                  />
-       
+                      raised
+                      image={ x.url }
+                      header={ x.name }
+                   />
+   
+             
+          
             )
            })
          }   
-           </Card.Group>   
+         </Card.Group>
         </Container>
        </div>
     )
   }
 
 }
-
 
 
 
