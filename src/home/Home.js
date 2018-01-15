@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Card, Container } from 'semantic-ui-react'
+import {  Card, Image, Container } from 'semantic-ui-react'
 import { observer } from 'mobx-react'
 import '../index.css'
 
@@ -7,9 +7,11 @@ import '../index.css'
 
 @observer
 export default class Home extends Component {
+render(){
 
 
-  render(){
+
+
     return (
        <div>
          
@@ -17,17 +19,14 @@ export default class Home extends Component {
            this.props.store.story.map((stories, i) => {
             return(
               <Container >
-              <br/>
-            
-                      <Card.Group itemsPerRow={4}>
-                        <Card key={i}
-                          image={ stories.url }
-                          header={ stories.title }
-                          meta ={ stories.genra }
-                        />
-                     </Card.Group>
-        
-            </Container>
+               <br/>              
+                <Card.Group itemsPerRow={4}>
+                  <Card>
+                    <Image src={ stories.url } />
+                  </Card>
+                </Card.Group>
+                
+              </Container>
             )
            })
          }
