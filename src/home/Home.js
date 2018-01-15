@@ -32,10 +32,9 @@ import FallX from '../detail/fallX'
 const Home = () => (
 
 <Container>
-        <Card.Group itemsPerRow={4}>
+    <Card.Group itemsPerRow={4}>
          <Card
             image={ behind }
-            size ='small'
             header="Behind The Girl"
             meta = "Mystery"
             extra={ <BehindX /> }
@@ -43,7 +42,6 @@ const Home = () => (
 
          <Card
             image={ heights }
-            size ='small'
             header='Heights'
             meta = "Romance"
             extra={ <HeightX/> }
@@ -51,7 +49,6 @@ const Home = () => (
 
           <Card
             image={ king }
-            size ='small'
             header='Of King and Thieves'
             meta = "Fan fiction"
             extra={ <KingX/> }
@@ -68,7 +65,6 @@ const Home = () => (
 
          <Card
             image={ premade }
-            size ='small'
             header="Premades "
             meta = "Werewolf/Vampires"
             extra={ <PremadeX/> }
@@ -76,7 +72,6 @@ const Home = () => (
 
            <Card
             image={ alpha }
-            size ='small'
             header="The Alpha Girl"
             meta = "Fan fiction"
             extra={ <AlphaX/>  }
@@ -84,14 +79,12 @@ const Home = () => (
 
         <Card
             image={ romance }
-            size ='small'
             header="Sophia"
             meta = "General Fiction"
             extra={ <RomanceX/> }
          />
          <Card
             image={ heartbreak }
-            size ='small'
             header="Heartbreak City"
             meta = "Romance"
             extra={ <HeartbreakX/> }
@@ -99,7 +92,6 @@ const Home = () => (
 
           <Card
             image={ heart }
-            size ='small'
             header='Hearbreakers'
             meta = "Teen Fiction"
             extra={ <HeartX/>}
@@ -107,7 +99,6 @@ const Home = () => (
 
             <Card
             image={ undead }
-            size ='small'
             header="Undead "
             meta = "Mystery/Thriller"
             extra={ <UndeadX/> } 
@@ -115,7 +106,6 @@ const Home = () => (
              
             <Card
             image={ dreamers }
-            size ='small'
             header="The Dreamers"
             meta = "Mystery/Thriller"
             extra={ <DreamersX/>}
@@ -123,14 +113,13 @@ const Home = () => (
  
          <Card
             image={ fall }
-            size ='small'
             header="Fall For You"
             meta = "Mystery/Thriller"
             extra={ <FallX/> }
          />   
 
-    </Card.Group>
-    </Container>
+      </Card.Group>
+  </Container>
 )
 
 export default Home

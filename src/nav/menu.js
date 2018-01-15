@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import { Menu, MenuItem, Input } from 'semantic-ui-react'
 import { BrowserRouter as Link } from 'react-router-dom'
 
-//import Home from './home/Home'
-//import Cart from './cart'
-
 
 class MenuX extends Component { 
 
@@ -23,16 +20,7 @@ class MenuX extends Component {
                  secondary
                  color="red"
             >
-                             
-               {/* <MenuItem>
-                     <Dropdown>
-                         <Dropdown.Menu>
-                             <Dropdown.Item text="Sign Up" to="/login" as={Link}/>
-                         </Dropdown.Menu>
-                      </Dropdown>
-               </MenuItem> */}
-
-              
+                                      
 
                <MenuItem header 
                          icon="circle outline"
@@ -70,7 +58,7 @@ class MenuX extends Component {
          
            </Menu>
 
-          {/* <Route path="/login" component={ Login }/> */}
+  
       </div>
 
     )
