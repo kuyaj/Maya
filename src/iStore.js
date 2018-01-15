@@ -1,32 +1,5 @@
 import { observable } from 'mobx'
 
-import behind from './gallery/behind.jpg'
-import heights from './gallery/heights.png'
-import king from './gallery/king.jpg'
-import diary from './gallery/diary.jpg'
-import alpha from './gallery/alpha.png'
-import romance from './gallery/romance.jpg'
-import heartbreak from './gallery/heartbreak.jpg'
-import premade from './gallery/premade.jpg'
-import fall from './gallery/fall.jpg'
-import undead from './gallery/undead.png'
-import dreamers from './gallery/dreamers.jpg'
-import heart from './gallery/heartbreakers.jpg'
-
-// import BehindX from './detail/behindX'
-// import HeightX from './detail/heightX'
-// import KingX from './detail/kingX'
-// import DiaryX from './detail/diaryX'
-// import PremadeX from './detail/premadeX'
-// import AlphaX from './detail/alphaX'
-// import RomanceX from './detail/romanceX'
-// import HeartbreakX from './detail/heartbreakX'
-// import HeartX from './detail/heartX'
-// import UndeadX from './detail/undeadX'
-// import DreamersX from './detail/dreamersX'
-// import FallX from './detail/fallX'
-
-
 class iStore {
 
 // @observable cart = [ 
@@ -37,11 +10,16 @@ class iStore {
 //                    ]
 
 @observable story = [
-    {
-        header : "Behind the Girl",
-        image : { behind },
-        genra : "Vampire/Werewolf"
 
+    {
+        title : "Safe Haven",
+        url : "https://hips.hearstapps.com/sev.h-cdn.co/assets/17/02/980x1452/gallery-1484005021-safe-haven-xlg.jpg?resize=480:*",
+        genra : "Romance"
+    },
+    {
+        title : "The Fault In Our Stars",
+        url : "http://www.craigerscinemacorner.com/Images/Fault-in-our-Stars-poster.jpg",
+        genra : "Romance"
     }
 ]
 

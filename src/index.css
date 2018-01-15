@@ -1,6 +1,10 @@
-.margin { margin : 2em; }
+body {
+      background-image: url('gallery/background.png');
+}
+
+/* .margin { margin : 2em; }
 
 .justify {     
          text-align: justify;
-      }
+} */
 
