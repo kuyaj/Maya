@@ -21,10 +21,10 @@ render(){
         <br/>   
         <Card.Group doubling itemsPerRow={5}>   
          {
-           this.props.store.story.map((x) => {
+           this.props.store.story.map((x, i) => {
             return(                               
                   <Card  
-                      key={x.id}
+                      key={i}
                       raised
                    >
                    <Image src={ x.url } />

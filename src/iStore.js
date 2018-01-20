@@ -56,8 +56,8 @@ class iStore {
 ]
 
 
-remove(i) {
 
+remove(i) {
     this.story.slice(i, 1)
 }
 

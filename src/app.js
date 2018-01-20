@@ -10,8 +10,6 @@ class App extends Component {
 
 render(){
 return (
-
-   <div>
         <Router>   
          <div>
            <br/>
@@ -19,7 +17,7 @@ return (
             <Route path="/cart" component={ Cart }/> 
          </div>    
        </Router>
-   </div>
+
 
 )
 }
