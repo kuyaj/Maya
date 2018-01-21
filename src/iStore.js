@@ -11,7 +11,6 @@ class iStore {
     {
         name : "Love Songs For No One",
         url : "https://a.wattpad.com/cover/123309734-352-k164130.jpg",
-
     },
     {
         name : "23:11",
@@ -43,7 +42,10 @@ class iStore {
 
 
 remove(i) {
-    this.story.slice(i, 1)
+
+    this.story.peek(i,1)
+    console.log("Action fires up")
+
 }
 
 

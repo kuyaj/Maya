@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {  Card, Image, Button, Container } from 'semantic-ui-react'
+import {  Card, Image, Header, Button, Container } from 'semantic-ui-react'
 import { observer } from 'mobx-react'
 import '../index.css'
 
@@ -9,10 +9,10 @@ import '../index.css'
 @observer
 export default class Home extends Component {
 
-
-removeStory(i) {
-    this.props.store.remove(i) 
+erase(i){
+  this.props.store.remove(i)
 }
+
 render(){
 
     return (
@@ -27,16 +27,18 @@ render(){
                       key={i}
                       raised
                    >
-                   <Image src={ x.url } />
-                    <Card.Content 
+                   {/* <Image src={ x.url } /> */}
+                    <Card.Content
+                      header={x.name}
+                  
                       meta={
                       <Button
                           fluid
                           color="purple" 
-                          onClick={this.removeStory.bind(this)}
+                          onClick={this.erase.bind(this)}
                           content="Remove"
                       />
-                          }
+                      }
                     />
                   </Card>
             )
