@@ -42,10 +42,9 @@ class iStore {
 
 
 remove(i) {
-
-    this.story.peek(i,1)
-    console.log("Action fires up")
-
+    console.log(i)
+    // this.story.splice(4,1)
+  
 }
 
 

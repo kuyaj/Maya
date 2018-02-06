@@ -9,9 +9,7 @@ import '../index.css'
 @observer
 export default class Home extends Component {
 
-erase(i){
-  this.props.store.remove(i)
-}
+
 
 render(){
 
@@ -35,7 +33,7 @@ render(){
                       <Button
                           fluid
                           color="purple" 
-                          onClick={this.erase.bind(this)}
+                          onClick={this.willRemoved.bind(this)}
                           content="Remove"
                       />
                       }
